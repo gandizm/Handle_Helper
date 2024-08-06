@@ -90,7 +90,6 @@ ranged_path = data_dir / "ranged.txt"
 
 with open(ranged_path, 'r', encoding='utf-8') as file:
     lines = file.readlines()
-# rules = input("示例： 2_34,u/i,q,l,y,f#1,i,m   可不带#。").split('#')
 rules = input("示例： 2___/3 4,u i/uan i _ u,q l y f/q _ y f#1,m   可不带#。").split('#')
 include_rules = rules[0].split(',')
 include_rule_digits = include_rules[0].split('/')
