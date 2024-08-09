@@ -62,7 +62,7 @@ def match_elements(rule, line):
 # 匹配位置
 def match_position(rule, line):
     for i in range(len(rule)):
-        if rule[i] == "_":
+        if rule[i] == "_" or rule[i] == ".":
             continue
         elif rule[i] != line[i]:
             return False
@@ -113,5 +113,5 @@ for line in lines:
     if match_line(include_rules, exclude_rules, line, include_rule_digits, include_rule_vowels,
                   include_rule_consonants):
         matched_line = line
-        print(line)
+        # print(line)
         print(line[-5:])

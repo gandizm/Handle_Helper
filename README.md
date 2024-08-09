@@ -2,7 +2,7 @@
 数据来自nonebot_plugin_handle中的answer.json，使用data_processing.py进行数据预处理，可用match_answer.py匹配成语。
 
 ## 输入示例： 
-音调,韵母,声母#排除1,排除2,……    （注意：此处为英文逗号）
+音调,韵母,声母#排除1,排除2,……    （注意：此处为英文逗号,可以用英语句号“.”来代替下划线）
 
 2___/3 4,u i/uan i _ u,q l y f/q _ y f#1,m
 
